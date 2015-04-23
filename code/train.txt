@@ -1,7 +1,9 @@
-cat very likes sitting
-dog quite loves running
-man extremely enjoys sleeping
-woman always keeps talking
-baby just learns walking
-he often practices singing
-she really prefers dancing
+recurrent neural network is a machine learning model
+long short term memory is a machine learning model
+support vector machine is popular in industry
+language modeling with recurrent neural network
+language modeling with long short term memory
+text classification with support vector machine
+recurrent neural network
+long short term memory
+support vector machine
