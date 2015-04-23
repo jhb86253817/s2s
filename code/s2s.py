@@ -322,7 +322,7 @@ class RNNLM(object):
 
 
 def load_data():
-    train_file = open('arxiv_cs_clean_toy.txt', 'r')
+    train_file = open('train.txt', 'r')
     # training set, a list of sentences
     train_set = [l.strip() for l in train_file]
     train_file.close()
@@ -408,15 +408,15 @@ def main(param=None):
     if not param:
         param = {
             'lr': 0.1,
-            'nhidden': 50,
+            'nhidden': 20,
             # number of hidden units
             'seed': 345,
             'nepochs': 20,
-            'savemodel': False,
-            'loadmodel': True,
+            'savemodel': True,
+            'loadmodel': False,
             'folder':'../model/s2s',
-            'train': False,
-            'test': True}
+            'train': True,
+            'test': False}
     print param
 
     # load data and dictionary
@@ -450,7 +450,7 @@ def main(param=None):
 
     if param['train'] == True:
 
-        round_num = 80 
+        round_num = 40 
         train_data_labels = zip(train_data[0], train_data[1], train_data[2])
         print "Training..."
         start = time.time()
@@ -460,7 +460,7 @@ def main(param=None):
             i = 1
             for (x,y,z) in train_data_labels:
                 rnn.sentence_train(x, y, z, lr_current)
-                if i%50 == 0:
+                if i%9 == 0:
                     case_end = time.time()
                     print "Round %d, case %d, %f seconds" % (j+1, i, case_end-case_start)
                     case_start = time.time()
@@ -512,7 +512,7 @@ def main(param=None):
         next_word2(text, text2, train_dict, index2word, rnn, 4)
         print '\n'
 
-    #sent_vec(train_data, rnn, param['folder'])
+    sent_vec(train_data, rnn, param['folder'])
 
 if __name__ == '__main__':
     main()
