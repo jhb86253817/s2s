@@ -45,7 +45,7 @@ def visualize(sent_vecs, sents):
 
 if __name__ == "__main__":
     sent_vecs = load_sent_vecs('../model/s2s_2/sent_vecs.json')
-    sents = load_sents('arxiv_cs_clean_toy.txt')
+    sents = load_sents('train.txt')
     visualize(sent_vecs, sents)
     #norms = [LA.norm(w) for w in embedding]
     #embedding = [w/norm for (w,norm) in zip(embedding,norms)]
