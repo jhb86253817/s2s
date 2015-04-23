@@ -416,7 +416,7 @@ def main(param=None):
             'loadmodel': True,
             'folder':'../model/s2s',
             'train': False,
-            'test': False}
+            'test': True}
     print param
 
     # load data and dictionary
@@ -486,33 +486,33 @@ def main(param=None):
         #print rnn.wxg_2.get_value()
 
     if param['test'] == True:
-        text = "stochastic optimization algorithms"
+        text = "on the capacity of gaussian relay channels"
         print 'target: ' + text
         text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 3)
+        next_word2(text, text2, train_dict, index2word, rnn, 7)
         print '\n'
-        text = "performance analysis of systems"
+        text = "on the capacity of mimo interference channels"
+        print 'target: ' + text
+        text2 = "<bos>"
+        next_word2(text, text2, train_dict, index2word, rnn, 7)
+        print '\n'
+        text = "on sparse channel estimation"
         print 'target: ' + text
         text2 = "<bos>"
         next_word2(text, text2, train_dict, index2word, rnn, 4)
         print '\n'
-        text = "learning graph matching"
+        text = "on linear information systems"
         print 'target: ' + text
         text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 3)
+        next_word2(text, text2, train_dict, index2word, rnn, 4)
         print '\n'
-        text = "machine learning and its applications"
+        text = "on testing constraint programs"
         print 'target: ' + text
         text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 5)
-        print '\n'
-        text = "probabilistic models for machine learning"
-        print 'target: ' + text
-        text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 5)
+        next_word2(text, text2, train_dict, index2word, rnn, 4)
         print '\n'
 
-    sent_vec(train_data, rnn, param['folder'])
+    #sent_vec(train_data, rnn, param['folder'])
 
 if __name__ == '__main__':
     main()
