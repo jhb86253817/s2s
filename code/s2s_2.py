@@ -282,20 +282,22 @@ class RNNLM(object):
                                 outputs_info=[self.c0_1, self.h0_1],
                                 n_steps=x_r.shape[0],
                                 truncate_gradient=-1)
+        c_1_last = c_1[-1]
+        h_1_last = h_1[-1]
 
         [c_2, h_2, s_2], _ = theano.scan(fn=recurrence_2,
                                 sequences=x,
-                                non_sequences=[h_1],
-                                outputs_info=[T.zeros_like(c_1),
-                                    T.zeros_like(h_1), None],
+                                non_sequences=[h_1_last],
+                                outputs_info=[T.zeros_like(c_1_last),
+                                    T.zeros_like(h_1_last), None],
                                 n_steps=x.shape[0],
                                 truncate_gradient=-1)
 
         [c_3, h_3, s_3], _ = theano.scan(fn=recurrence_2,
                                 sequences=x_s,
-                                non_sequences=[h_1],
-                                outputs_info=[T.zeros_like(c_1),
-                                    T.zeros_like(h_1), None],
+                                non_sequences=[h_1_last],
+                                outputs_info=[T.zeros_like(c_1_last),
+                                    T.zeros_like(h_1_last), None],
                                 n_steps=x_s.shape[0],
                                 truncate_gradient=-1)
 
@@ -343,7 +345,7 @@ class RNNLM(object):
                             param.name + '.npy')))
 
 def load_data():
-    train_file = open('../data/ptb.train.txt', 'r')
+    train_file = open('arxiv_cs_clean_toy.txt', 'r')
     # training set, a list of sentences
     train_set = [l.strip() for l in train_file]
     train_file.close()
@@ -368,6 +370,21 @@ def ppl(data, rnn):
     mean_nll = numpy.mean(list(nlls))
 
     return float(2**mean_nll)
+
+def sent_vec(data, rnn, folder):
+    sent_vecs = [list(rnn.sent_vec(y)) for (x,y,z) in zip(data[0], data[1], data[2])]
+    #print len(sent_vecs)
+    #print sent_vecs[0]
+    #print type(sent_vecs[0])
+    #sent_vecs = [[list(w) for w in s] for s in sent_vecs]
+    #print sent_vecs[0]
+    #print sent_vecs[0][0]
+    #print sent_vecs[0][0][0]
+    #print type(sent_vecs[0])
+    #print type(sent_vecs[0][0])
+    #print type(sent_vecs[0][0][0])
+    with open('../model/'+folder+'/sent_vecs.json', 'w') as f:
+        f.write(json.dumps(sent_vecs))
 
 def random_generator(probs, vocab_size):
     xk = xrange(vocab_size)
@@ -418,10 +435,10 @@ def main(param=None):
             # number of hidden units
             'seed': 345,
             'nepochs': 20,
-            'savemodel': False,
-            'loadmodel': True,
+            'savemodel': True,
+            'loadmodel': False,
             'folder':'../model/s2s_2',
-            'train': False,
+            'train': True,
             'test': True}
     print param
 
@@ -432,8 +449,8 @@ def main(param=None):
     index2word = dict([(v,k) for k,v in train_dict.iteritems()])
 
     # instanciate the model
-    numpy.random.seed(param['seed'])
-    random.seed(param['seed'])
+    #numpy.random.seed(param['seed'])
+    #random.seed(param['seed'])
 
     rnn = RNNLM(nh=param['nhidden'],
                 nw=len(train_dict))
@@ -456,7 +473,7 @@ def main(param=None):
 
     if param['train'] == True:
 
-        round_num = 20 
+        round_num = 80 
         train_data_labels = zip(train_data[0], train_data[1], train_data[2])
         print "Training..."
         start = time.time()
@@ -492,32 +509,33 @@ def main(param=None):
         #print rnn.wxg_2.get_value()
 
     if param['test'] == True:
-        text = "there is no asbestos in our products now"
+        text = "on the capacity of gaussian relay channels"
         print 'target: ' + text
         text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 10)
+        next_word2(text, text2, train_dict, index2word, rnn, 7)
         print '\n'
-        text = "we have no useful information on whether users are at risk said james"
+        text = "on the capacity of mimo interference channels"
         print 'target: ' + text
         text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 10)
+        next_word2(text, text2, train_dict, index2word, rnn, 7)
         print '\n'
-        text = "but you have to recognize that these events took place N years ago"
+        text = "on sparse channel estimation"
         print 'target: ' + text
         text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 10)
+        next_word2(text, text2, train_dict, index2word, rnn, 4)
         print '\n'
-        text = "it has no bearing on our work force today"
+        text = "on linear information systems"
         print 'target: ' + text
         text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 10)
+        next_word2(text, text2, train_dict, index2word, rnn, 4)
         print '\n'
-        text = "it employs N people and has annual revenue of about $ N million"
+        text = "on testing constraint programs"
         print 'target: ' + text
         text2 = "<bos>"
-        next_word2(text, text2, train_dict, index2word, rnn, 10)
+        next_word2(text, text2, train_dict, index2word, rnn, 4)
         print '\n'
 
+    sent_vec(train_data, rnn, param['folder'])
 
 if __name__ == '__main__':
     main()
