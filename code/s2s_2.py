@@ -333,6 +333,9 @@ class RNNLM(object):
                                               outputs=sentence_nll,
                                               updates=sentence_updates,
                                               allow_input_downcast=True)
+        self.sent_vec = theano.function(inputs=[idxs_r], 
+                                        outputs=h_1[-1],
+                                        allow_input_downcast=True)
 
     def save(self, folder):
         for param in self.params:
@@ -435,11 +438,11 @@ def main(param=None):
             # number of hidden units
             'seed': 345,
             'nepochs': 20,
-            'savemodel': True,
-            'loadmodel': False,
+            'savemodel': False,
+            'loadmodel': True,
             'folder':'../model/s2s_2',
-            'train': True,
-            'test': True}
+            'train': False,
+            'test': False}
     print param
 
     # load data and dictionary
