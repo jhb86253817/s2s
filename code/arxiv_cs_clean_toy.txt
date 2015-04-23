@@ -1,0 +1,269 @@
+the complexity of simple stochastic games
+stochastic optimization algorithms
+rate bounds for mimo relay channels
+performance analysis of systems
+on cognitive interference networks
+cooperative game theory and the gaussian interference channel
+bounds on the network coding capacity for wireless random networks
+coding for network coding
+capacity bounds for the gaussian interference channel
+approximate capacity of gaussian relay networks
+processing information in quantum decision theory
+the complexity of testing properties of simple games
+problem solving and complex systems
+logic mining using neural networks
+on the capacity of gaussian relay channels
+wireless network design for mobile control applications
+learning graph matching
+bounds on codes based on graph theory
+on the capacity of mimo interference channels
+quantum classification
+protocol channels
+dynamic tree algorithms
+a framework for the local information dynamics of distributed computation in complex systems
+a novel clustering algorithm based on quantum games
+simple channel coding bounds
+the sensing capacity of sensor networks
+efficient implementation of linear programming decoding
+stochastic constraint programming
+design and analysis of codes
+relay selection and power allocation in cooperative cellular networks
+semantic social network analysis
+adaptive sampling for linear state estimation
+design of learning based mimo cognitive radio systems
+on sparse channel estimation
+state complexity approximation
+programming with quantum communication
+polynomial time algorithms for minimum energy scheduling
+quantum control theory and applications a survey
+state information in bayesian games
+a survey of statistical network models
+secure communication in stochastic wireless networks
+compressed compressed sensing
+cooperative algorithms for mimo interference channels
+online distributed sensor selection
+distributed rate allocation for wireless networks
+improved bounds for stochastic matching
+energy optimal transmission scheduling in wireless sensor networks
+knowledge management
+a logic for networks
+cloud computing
+on linear information systems
+clustering processes
+clustering processes
+on testing constraint programs
+game information system
+mimo detection algorithms for high data rate wireless transmission
+information distance
+communication complexity
+is polynomial
+theory of processes
+cooperative feedback for mimo interference channels
+approximate inference and stochastic optimal control
+error performance of channel coding in random access communication
+wireless scheduling with power control
+theory and applications of robust optimization
+efficient approximation of optimal control for markov games
+a survey on wireless sensor network security
+secure communication over parallel relay channel
+local distributed decision
+a distributed clustering algorithm for dynamic networks
+energy efficient clustering and routing in mobile wireless sensor network
+dynamic power allocation games in parallel multiple access channels
+robust distributed online prediction
+a complex networks approach for data clustering
+programming language
+graph theory
+efficient bayesian social learning on trees
+quantum interference channels
+computing linear functions by linear coding over networks
+dynamic network models
+optimal channel allocation with dynamic power control in cellular networks
+parallel online learning
+gaussian robust classification
+quantum bayesian implementation
+fast local computation algorithms
+interference channel with state information
+the problem
+complex networks
+survey of cognitive radio techniques in wireless network
+secure data processing in a hybrid cloud
+quantum decision theory
+on the capacity of the interference channel with a cognitive relay
+information complexity and estimation
+the generalized a architecture
+the language of search
+a distributed power control and transmission rate allocation algorithm over multiple channels
+efficient capacity computation and power optimization for relay networks
+quantum social networks
+performance analysis of hybrid relay selection in cooperative wireless systems
+transmission capacity of wireless networks
+random local algorithms
+on dynamic distributed computing
+efficient inference in markov control problems
+the power of local information in social networks
+power optimization in random wireless networks
+algorithms for wireless capacity
+performance of a distributed stochastic approximation algorithm
+on quantum information
+theory and applications of compressed sensing
+adaptive framework for data distribution in wireless sensor networks
+hybrid a case study
+method study on the N problem
+the and problem
+survey on distributed data mining in networks
+a hybrid clustering algorithm for data mining
+a theory of information matching
+on hybrid models of quantum finite automata
+efficient scheduling using complex networks
+a distributed algorithm for sensor networks
+a survey on cloud computing security
+approximate inference algorithms for hybrid bayesian networks with discrete constraints
+secure channel simulation
+robust probabilistic inference in distributed systems
+improved interference in wireless sensor networks
+learning the interference graph of a wireless network
+properties of the quantum channel
+from sampling to generation
+the system
+communication dynamics in finite capacity social networks
+communication between two
+dynamics in online social networks
+a quantum algorithm for solving the problem
+neural networks for complex data
+stochastic games on a multiple access channel
+social network games
+stochastic complexity of bayesian networks
+entropy in social networks
+matrix design for optimal sensing
+on parallel implementation of a discrete optimization random search algorithm
+optimal time bounds for approximate clustering
+a clustering approach to solving large stochastic matching problems
+improved learning of bayesian networks
+recognition networks for approximate inference in networks
+modeling complex systems with adaptive networks
+stochastic logic programs sampling inference and applications
+gaussian process networks
+game networks
+security in wireless sensor networks
+fast learning from sparse data
+hybrid probabilistic programs algorithms and complexity
+approximate learning in complex dynamic bayesian networks
+learning the structure of dynamic probabilistic networks
+quantum is
+a bayesian approach to learning bayesian networks with local structure
+learning bayesian networks with local structure
+complex networks analysis of language complexity
+stochastic simulation algorithms for dynamic probabilistic networks
+on the complexity of solving markov decision problems
+on a game on graphs
+learning gaussian networks
+entropy distance
+a novel algorithm for linear programming
+network detection theory and performance
+a dynamic approach to probabilistic inference
+information and computation
+multiple decision trees
+a linear approximation method for probabilistic inference
+knowledge and security
+image optimization and prediction
+parallel processing of large graphs
+a generalized channel coding theory for distributed communication
+robust distributed detection
+a local computation approximation scheme to maximum matching
+on quantum algorithm for binary search and its computational complexity
+a new system analysis
+distributed detection and estimation in wireless sensor networks
+an approximation algorithm for the problem
+optimal rate sampling in N systems
+social data mining through distributed mobile sensing
+stochastic optimization for machine learning
+a parallel data distribution management algorithm
+efficient graph algorithms for network analysis
+approximation theory and the design of fast algorithms
+optimal hybrid channel allocation based on machine learning algorithms
+bounds on inference
+solving and matching in polynomial time
+distributed computing on complex networks
+analysis of wireless power transmission
+on approximate inference for generalized gaussian process models
+on the communication complexity of secure computation
+statistical estimation for optimization problems on graphs
+dynamic interference management
+towards the framework of information security
+network in network
+on the cooperative communication over cognitive interference channel
+on the decision number of graphs
+security in cognitive radio networks
+survey on software testing techniques in cloud computing
+information based complexity of networks
+statistical constraints
+dynamic rate and channel selection in cognitive radio systems
+quantum inference on bayesian networks
+how to network in online social networks
+a fast clustering algorithm for mining social network data
+analysis techniques for adaptive online learning
+problem complexity in parallel problem solving
+the power of online learning in stochastic network optimization
+improved security in cloud computing
+distributed graph automata
+security analysis of cloud computing
+logic and constraint logic programming for distributed constraint optimization
+on the complexity of testing
+random logic programs linear model
+learning probabilistic programs
+distributed inference in tree networks using coding theory
+distributed power control over interference channels using feedback
+image processing
+a new approach in machine learning
+matching dynamics with constraints
+local algorithms for graphs
+distributed robust learning
+distributed clustering and learning over networks
+a security architecture for mobile wireless sensor networks
+algorithms for stochastic games on interference channels
+machine learning techniques in cognitive radio networks
+optimization of dynamic matching models
+computational complexity of functions
+sampling large data on graphs
+probabilistic constraint logic programming
+optimal routing on complex networks
+towards robust quantum computation
+communication complexity and secure function evaluation
+bayesian logic programs
+cellular automata and communication complexity
+complex systems
+language access an information based approach
+the structure of information
+some applications of coding theory in computational complexity
+routing algorithms for wireless sensor networks
+distributed learning in wireless sensor networks
+software performance analysis
+complexity of networks
+the of constraints
+robust inference of trees
+adaptive linear programming decoding
+robust distributed source coding
+modeling the dynamics of social networks
+on the capacity of multiple access channels with state information and feedback
+matrix games linear programming and linear approximation
+the capacity of channels with feedback
+local approximate inference algorithms
+maximum entropy mimo wireless channel models
+a polynomial time algorithm for
+interference automata
+probabilistic analysis of linear programming decoding
+distributed power allocation with rate constraints in gaussian parallel interference channels
+optimal power allocation for distributed detection over mimo channels in wireless sensor networks
+adaptive methods for linear programming decoding
+parallel programming with matrix distributed processing
+the maximum entropy state
+decoding by linear programming
+polynomial method in coding and information theory
+quantum information in space and time
+quantum optimization problems
+on quantum cellular automata
+improved bounds on quantum learning algorithms
+quantum search algorithms
+quantum information and entropy
+analysis of quantum functions
