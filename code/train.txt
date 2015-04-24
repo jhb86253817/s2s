@@ -3,7 +3,10 @@ long short term memory is a machine learning model
 support vector machine is popular in industry
 language modeling with recurrent neural network
 language modeling with long short term memory
+recurrent neural network suffers from vanishing gradient problem
+long short term memory does not suffer from vanishing gradient problem
 text classification with support vector machine
+support vector machine is better at classification
 recurrent neural network
 long short term memory
 support vector machine

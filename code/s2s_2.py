@@ -434,7 +434,7 @@ def main(param=None):
     if not param:
         param = {
             'lr': 0.1,
-            'nhidden': 50,
+            'nhidden': 20,
             # number of hidden units
             'seed': 345,
             'nepochs': 20,
